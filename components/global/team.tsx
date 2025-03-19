@@ -12,7 +12,10 @@ const dmSans = DM_Sans({
 
 export default function Team() {
   return (
-    <div className="bg-secondary text-primary px-4 md:px-12 pt-20 sm:pt-28 relative z-10 md:mr-8 team-bg">
+    <div
+      id="team"
+      className="bg-secondary text-primary px-4 md:px-12 pt-20 sm:pt-28 relative z-10 md:mr-8 team-bg"
+    >
       <FadeInWhenVisible>
         <h1
           className={cn(

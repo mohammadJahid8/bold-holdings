@@ -42,7 +42,10 @@ export default function Portfolio() {
   ];
 
   return (
-    <div className="bg-accent text-primary px-4 md:px-12 pt-20 sm:pt-28 relative z-10 md:mr-8 portfolio-bg">
+    <div
+      id="portfolio"
+      className="bg-accent text-primary px-4 md:px-12 pt-20 sm:pt-28 relative z-10 md:mr-8 portfolio-bg"
+    >
       <FadeInWhenVisible>
         <h1
           className={cn(

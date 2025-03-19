@@ -32,28 +32,21 @@ export default function Header() {
     >
       <div className="flex justify-between items-center">
         <Image src="/TBH_Logo.jpg" alt="Logo" width={50} height={50} />
-        {/* <h1
-          className={cn(
-            "text-white text-xl md:text-3xl font-medium",
-            dmSans.className
-          )}
-        >
-          THE BOLD HOLDINGS
-        </h1> */}
+
         {/* Desktop Nav */}
         <nav className="hidden md:block ml-auto">
           <ul className="flex gap-x-8 text-white">
             <li>
               <a
-                href="#"
+                href="#about"
                 className="hover:underline uppercase text-base font-thin tracking-[-.04em] text-secondary-foreground"
               >
-                About
+                About Us
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#portfolio"
                 className="hover:underline uppercase text-base font-thin tracking-[-.04em] text-secondary-foreground"
               >
                 Portfolio
@@ -61,10 +54,10 @@ export default function Header() {
             </li>
             <li>
               <a
-                href="#"
+                href="#team"
                 className="hover:underline uppercase text-base font-thin tracking-[-.04em] text-secondary-foreground"
               >
-                About us
+                Team
               </a>
             </li>
           </ul>
