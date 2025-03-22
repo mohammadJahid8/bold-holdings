@@ -34,7 +34,7 @@ const How = () => {
             <p>
               At{" "}
               <span className="text-accent-foreground font-medium">
-                The BOLD Holdings,
+                The Bold Holdings,
               </span>{" "}
               we strongly believe that success is never achieved alone.
             </p>

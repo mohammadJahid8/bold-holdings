@@ -30,7 +30,7 @@ const Global = () => {
           <div className="flex flex-col gap-4 text-base sm:text-2xl md:text-3xl text-secondary-foreground max-w-full sm:max-w-[85%] md:max-w-[70%] font-light">
             <p>
               <span className="text-accent-foreground font-medium">
-                The BOLD Holdings,
+                The Bold Holdings,
               </span>{" "}
               is fully committed to expanding its global footprint and providing
               world-class professional services to clients in every corner of

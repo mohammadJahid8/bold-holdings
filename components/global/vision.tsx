@@ -48,7 +48,7 @@ export function VisionSection() {
           dmSans.className
         )}
       >
-        Brother Group Vision
+        The Bold Holdings Vision
       </h3>
       <h1
         className={cn(

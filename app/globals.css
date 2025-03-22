@@ -175,6 +175,18 @@ html {
   background-repeat: no-repeat;
   background-position: right bottom;
 
+  @media (max-width: 1800px) {
+    width: 16rem;
+    bottom: -10rem;
+  }
+  @media (max-width: 1580px) {
+    width: 14rem;
+    bottom: -10rem;
+  }
+  @media (max-width: 1024px) {
+    width: 10rem;
+    bottom: -6rem;
+  }
   @media (max-width: 768px) {
     width: 10rem;
     bottom: -8rem;

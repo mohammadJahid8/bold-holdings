@@ -92,11 +92,11 @@ export default function Helped() {
                 </h3>
                 <p className="text-zinc-300 mb-6">{project.description}</p>
               </div>
-              <div className="flex items-center gap-4 mt-4">
+              <div className="flex items-center gap-2 mt-4">
                 {project.images.map((image) => (
                   <div
                     key={image}
-                    className="w-20 sm:w-24 aspect-square flex justify-center items-center shrink-0"
+                    className="max-w-20 w-full sm:max-w-24 aspect-square flex justify-center items-center"
                   >
                     <img
                       src={image}

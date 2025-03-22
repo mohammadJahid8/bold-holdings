@@ -8,8 +8,11 @@ const roboto = Roboto({
 });
 
 export const metadata: Metadata = {
-  title: "The BOLD Holdings",
-  description: "The BOLD Holdings",
+  title: "The Bold Holdings",
+  description: "The Bold Holdings",
+  icons: {
+    icon: "/TBH_Logo.png",
+  },
 };
 
 export default function RootLayout({

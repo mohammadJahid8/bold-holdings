@@ -10,6 +10,7 @@ type Testimonial = {
   name: string;
   designation: string;
   src: string;
+  email: string;
 };
 export const AnimatedTestimonials = ({
   testimonials,
@@ -112,11 +113,16 @@ export const AnimatedTestimonials = ({
               ease: "easeInOut",
             }}
           >
-            <h3 className="text-3xl font-bold dark:text-white text-black">
+            <h3 className="text-3xl font-bold  text-black">
               {testimonials[active].name}
             </h3>
-            <p className="text-sm text-gray-500 dark:text-neutral-500">
+            <p className="text-sm text-gray-500">
               {testimonials[active].designation}
+            </p>
+            <p className="text-sm text-gray-400 hover:underline">
+              <a href={`mailto:${testimonials[active].email}`}>
+                {testimonials[active].email}
+              </a>
             </p>
             <motion.p className="text-lg text-gray-500 mt-8 dark:text-neutral-300">
               {testimonials[active].quote.split(" ").map((word, index) => (
