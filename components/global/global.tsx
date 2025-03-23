@@ -4,7 +4,7 @@ import { DM_Sans } from "next/font/google";
 import { cn } from "@/lib/utils";
 import TypingText from "./typing";
 import FadeInWhenVisible from "./fade-in";
-import { WorldMapSection } from "./world-map";
+import Image from "next/image";
 
 const dmSans = DM_Sans({
   subsets: ["latin"],
@@ -39,7 +39,14 @@ const Global = () => {
           </div>
 
           <div className="mt-12">
-            <WorldMapSection />
+            <Image
+              unoptimized
+              src="/map.png"
+              alt="Global Map"
+              width={1000}
+              height={1000}
+              className="w-full h-auto"
+            />
           </div>
         </div>
       </FadeInWhenVisible>

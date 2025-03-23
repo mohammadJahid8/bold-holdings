@@ -43,7 +43,7 @@ export default function Helped() {
       id: 3,
       title: "Project #3",
       description: "Local Venture Space Commercialization.",
-      images: ["/tess.png", "/huruf.png"],
+      images: ["/tess.png", "/huruf.png", "/espaco.png"],
     },
     {
       id: 4,
