@@ -162,11 +162,7 @@ export default function Clients() {
           <TypingText text="Clients" delay={0.1} />
         </h1>
         <div className="flex flex-col antialiased items-center justify-center relative overflow-hidden">
-          <InfiniteMovingCards
-            items={clients}
-            direction="right"
-            speed="normal"
-          />
+          <InfiniteMovingCards items={clients} direction="right" speed="fast" />
         </div>
       </div>
     </div>

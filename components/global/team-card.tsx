@@ -8,7 +8,7 @@ export function TeamCard() {
       name: "Xerixe (Gerald)",
       email: "gerald@tess.gg",
       designation: "Seasoned Tech Lead, TESS",
-      src: "/gib.png",
+      src: "/xerixe.png",
     },
     {
       quote:
@@ -16,7 +16,7 @@ export function TeamCard() {
       name: "Mr. Gib (Nicholas)",
       designation: "Barrister-at-Law cum Serial Entrepreneur, SION LABS",
       email: "nicholas@sion.gg",
-      src: "/xerixe.png",
+      src: "/gib.png",
     },
     {
       quote:
