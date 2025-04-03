@@ -1,24 +1,29 @@
 import { ArrowLeft, ArrowRight, ArrowUp, ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
+import Image from "next/image";
 
 const companies = [
   {
     name: "TESS",
+    logo: "/tess.png",
     description:
       "Our tech division, specializing in web/app development, AI, and ML, delivering cutting-edge solutions for modern businesses",
   },
   {
     name: "Sion Labs",
+    logo: "/sion.png",
     description:
       "A Web3 marketing pioneer, connecting businesses with Asia's top Web3 leaders through strategic collaborations",
   },
   {
     name: "HURUF",
+    logo: "/huruf.png",
     description:
       "A creative powerhouse in marketing, branding, and event management, driving high-impact campaigns and brand activations",
   },
   {
     name: "ESPACO",
+    logo: "/espaco.png",
     description:
       "Experts in interior design and space planning, crafting personalized environments that blend style, comfort, and functionality",
   },
@@ -81,9 +86,17 @@ export default function HowItems() {
             className="flex flex-col items-center text-center p-6"
             variants={item}
           >
-            <div className="font-bold text-2xl mb-4 text-white">
+            <Image
+              src={company.logo}
+              alt={company.name}
+              width={100}
+              height={100}
+              className="h-12 sm:h-16 object-contain"
+            />
+
+            {/* <div className="font-bold text-2xl mb-4 text-white">
               {company.name}
-            </div>
+            </div> */}
             <p className="text-sm md:text-xl text-[#bec5c5] max-w-md">
               {company.description}
             </p>

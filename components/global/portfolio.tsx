@@ -39,6 +39,10 @@ export default function Portfolio() {
       name: "Sion Labs",
       url: "https://sion.gg/",
     },
+    {
+      name: "Espaco",
+      url: "https://espaco.gg/",
+    },
   ];
 
   return (
@@ -59,7 +63,7 @@ export default function Portfolio() {
         </h1>
         <div className="border-t border-[rgba(110,121,122,.3)] py-14 sm:py-20">
           <motion.div
-            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 gap-6 sm:gap-10"
+            className="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 sm:gap-10"
             variants={container}
             initial="hidden"
             whileInView="visible"
@@ -70,7 +74,7 @@ export default function Portfolio() {
                 key={idx}
                 variants={item}
                 className={cn(
-                  "group relative flex flex-col items-center justify-center text-center px-4 sm:px-6 min-h-[140px] sm:min-h-[200px] cursor-pointer transition-all",
+                  "group relative flex flex-col items-center justify-center text-center px-4 sm:px-6 min-h-[100px] sm:min-h-[200px] cursor-pointer transition-all",
                   idx !== portfolio.length - 1 &&
                     "md:border-r border-[rgba(110,121,122,.3)]"
                 )}
