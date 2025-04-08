@@ -49,7 +49,7 @@ export default function Helped() {
       id: 4,
       title: "Project #4",
       description:
-        "Order Flow Management for US client for liquidity provision.",
+        "Developed an Order Flow Management system for a US client to support liquidity provision.",
       images: ["/tess.png", "/sion.png"],
     },
   ];
@@ -90,9 +90,9 @@ export default function Helped() {
                 >
                   {project.title}
                 </h3>
-                <p className="text-zinc-300 mb-6">{project.description}</p>
+                <p className="text-zinc-300">{project.description}</p>
               </div>
-              <div className="flex items-center gap-2 mt-4">
+              <div className="flex items-center justify-center gap-2">
                 {project.images.map((image) => (
                   <div
                     key={image}

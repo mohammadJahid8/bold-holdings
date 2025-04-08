@@ -13,7 +13,7 @@ const Mission = () => {
   const stats = [
     { value: "7+", label: "companies" },
     { value: "11+", label: "countries collaborated" },
-    { value: "50+", label: "partnership" },
+    { value: "50+", label: "partnerships" },
     { value: "200+", label: "projects" },
   ];
 

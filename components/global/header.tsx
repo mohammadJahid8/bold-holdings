@@ -3,7 +3,7 @@
 import { useState, useEffect } from "react";
 import { motion } from "framer-motion";
 import { Menu, X } from "lucide-react"; // You can use Lucide icons or any icon library
-import Image from "next/image";
+import Logo from "./logo";
 
 export default function Header() {
   const [visible, setVisible] = useState(true);
@@ -31,7 +31,7 @@ export default function Header() {
       transition={{ duration: visible ? 0.1 : 0.1, ease: "easeInOut" }}
     >
       <div className="flex justify-between items-center">
-        <Image src="/TBH_Logo.jpg" alt="Logo" width={50} height={50} />
+        <Logo />
 
         {/* Desktop Nav */}
         <nav className="hidden md:block ml-auto">

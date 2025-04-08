@@ -83,7 +83,7 @@ export default function HowItems() {
         {companies.map((company, idx) => (
           <motion.div
             key={idx}
-            className="flex flex-col items-center text-center p-6"
+            className="flex flex-col items-center text-center p-6 bg-[#8B9596] rounded-3xl"
             variants={item}
           >
             <Image
@@ -97,7 +97,7 @@ export default function HowItems() {
             {/* <div className="font-bold text-2xl mb-4 text-white">
               {company.name}
             </div> */}
-            <p className="text-sm md:text-xl text-[#bec5c5] max-w-md">
+            <p className="text-sm md:text-xl text-white max-w-md">
               {company.description}
             </p>
           </motion.div>

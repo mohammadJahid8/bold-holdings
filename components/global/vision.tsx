@@ -27,7 +27,7 @@ export function VisionSection() {
     {
       title: "Vision",
       description:
-        "To lead the creation of pioneering ventures that drive industry innovation and accelerate growth on global scale.",
+        "To lead the creation of pioneering ventures that drive industry innovation and accelerate growth on a global scale.",
     },
     {
       title: "Mission",
@@ -48,7 +48,7 @@ export function VisionSection() {
           dmSans.className
         )}
       >
-        The Bold Holdings Vision
+        The Bold Holdings’ Vision
       </h3>
       <h1
         className={cn(

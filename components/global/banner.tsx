@@ -36,13 +36,10 @@ export default function Banner() {
             <TypingText text="Approach:" delay={0.1} />
           </span>
           <span className="block">
-            <TypingText text="Strategic, Insightful" delay={0.6} />
+            <TypingText text="Strategic, Insightful," delay={0.6} />
           </span>
           <span className="block">
-            <TypingText text="Results " delay={1.5} />
-            <span>
-              <TypingText text="Driven" delay={1.9} />
-            </span>
+            <TypingText text="Results-Driven" delay={1.5} />
           </span>
         </h1>
       </section>

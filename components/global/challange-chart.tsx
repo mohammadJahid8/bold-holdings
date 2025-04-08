@@ -9,6 +9,13 @@ import {
   ResponsiveContainer,
 } from "recharts";
 import { ChartContainer } from "../ui/chart";
+import { DM_Sans } from "next/font/google";
+import { cn } from "@/lib/utils";
+
+const dmSans = DM_Sans({
+  subsets: ["latin"],
+  weight: ["400", "500", "700"],
+});
 
 export default function ChallengesChart() {
   const chartData = [
@@ -20,6 +27,9 @@ export default function ChallengesChart() {
 
   return (
     <div className="w-full">
+      <h2 className={cn("text-center text-xl font-bold", dmSans.className)}>
+        Percentage (%) of businesses facing these challenges
+      </h2>
       <ChartContainer
         config={{
           percentage: {
