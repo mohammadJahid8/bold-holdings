@@ -38,7 +38,7 @@ export default function Header() {
           <ul className="flex gap-x-8 text-white">
             <li>
               <a
-                href="#about"
+                href="#mission"
                 className="hover:underline uppercase text-base font-thin tracking-[-.04em] text-secondary-foreground"
               >
                 About Us

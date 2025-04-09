@@ -101,7 +101,7 @@ export const InfiniteMovingCards = ({
             <img
               src={item.logo}
               alt={item.name}
-              className="h-12 w-full object-contain grayscale group-hover:grayscale-0 transition duration-300 ease-in-out"
+              className="h-12 w-auto object-contain grayscale group-hover:grayscale-0 transition duration-300 ease-in-out"
             />
           </motion.li>
         ))}

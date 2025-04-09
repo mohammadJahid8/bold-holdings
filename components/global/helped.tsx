@@ -79,7 +79,10 @@ export default function Helped() {
             <motion.div
               key={project.id}
               variants={item}
-              className="bg-zinc-800 rounded-3xl p-6 md:p-8 flex flex-col justify-between h-full"
+              className={cn(
+                "bg-zinc-800 rounded-3xl p-6 md:p-8 flex flex-col justify-between h-full",
+                (project.id === 2 || project.id === 4) && "bg-[#8B9596]"
+              )}
             >
               <div>
                 <h3
@@ -90,7 +93,7 @@ export default function Helped() {
                 >
                   {project.title}
                 </h3>
-                <p className="text-zinc-300">{project.description}</p>
+                <p className="text-white">{project.description}</p>
               </div>
               <div className="flex items-center justify-center gap-2">
                 {project.images.map((image) => (

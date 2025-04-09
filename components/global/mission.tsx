@@ -18,9 +18,12 @@ const Mission = () => {
   ];
 
   return (
-    <div className="bg-secondary text-primary px-4 md:px-12 pt-16 sm:pt-20">
+    <div
+      id="mission"
+      className="bg-secondary text-primary px-4 md:px-12 pt-10 sm:pt-20"
+    >
       <FadeInWhenVisible>
-        <div className="border-t border-[rgba(110,121,122,0.3)] py-12 sm:py-20 grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10">
+        <div className="border-t border-[rgba(110,121,122,0.3)] py-6 sm:py-20 grid grid-cols-1 lg:grid-cols-3 gap-8 md:gap-10">
           <div className="grid grid-cols-2 gap-6 place-items-center col-span-1">
             {stats.map((stat, index) => (
               <div key={index} className="text-center">

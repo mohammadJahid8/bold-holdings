@@ -9,7 +9,7 @@ import Helped from "@/components/global/helped";
 import How from "@/components/global/how";
 import Lenis from "@/components/global/lenis";
 import Mission from "@/components/global/mission";
-import Portfolio from "@/components/global/portfolio";
+// import Portfolio from "@/components/global/portfolio";
 import Team from "@/components/global/team";
 import DottedWave from "@/components/global/wave";
 
@@ -33,7 +33,7 @@ export default function Home() {
       <How />
       <Global />
       <Clients />
-      <Portfolio />
+      {/* <Portfolio /> */}
       <Team />
       <Footer />
     </Lenis>

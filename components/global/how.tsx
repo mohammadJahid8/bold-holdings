@@ -14,7 +14,7 @@ const dmSans = DM_Sans({
 const How = () => {
   return (
     <div
-      id="about"
+      id="portfolio"
       className="bg-muted text-primary px-4 md:px-12 pt-20 md:pt-28 relative z-10 md:mr-8 how-bg"
     >
       <FadeInWhenVisible>

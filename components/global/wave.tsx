@@ -2,8 +2,10 @@
 
 import { useState } from "react";
 import { motion } from "framer-motion";
+import { useMediaQuery } from "@/hooks/use-media-query";
 
 const DottedWave = () => {
+  const isMobile = useMediaQuery("(max-width: 768px)");
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
 
   const heights = [
@@ -21,8 +23,8 @@ const DottedWave = () => {
 
   return (
     <svg
-      className="w-max h-[200px] md:h-[400px]"
-      viewBox={`0 0 ${heights.length * 18} 400`}
+      className="w-max h-[170px] md:h-[400px]"
+      viewBox={`0 0 ${heights.length * 18} ${isMobile ? 300 : 400}`}
       xmlns="http://www.w3.org/2000/svg"
       onMouseMove={handleMouseMove}
       onMouseLeave={() => setHoverIndex(null)}

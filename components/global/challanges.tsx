@@ -52,15 +52,15 @@ const Challenges = () => {
   ];
 
   return (
-    <div className="bg-secondary text-primary px-4 md:px-12 pt-20 challenges-bg relative">
-      <div className="border-t border-[rgba(110,121,122,0.3)] py-14 sm:py-20">
+    <div className="bg-secondary text-primary px-4 md:px-12 pt-10 sm:pt-20 challenges-bg relative">
+      <div className="border-t border-[rgba(110,121,122,0.3)] py-6 sm:py-20">
         <motion.h1
           initial={{ opacity: 0, y: 30 }}
           whileInView={{ opacity: 1, y: 0 }}
           viewport={{ once: true, amount: 0.2 }}
           transition={{ duration: 0.6, ease: "easeOut" }}
           className={cn(
-            "text-3xl sm:text-4xl font-bold mb-10 text-muted-foreground",
+            "text-3xl sm:text-4xl font-bold mb-10 text-black",
             dmSans.className
           )}
         >

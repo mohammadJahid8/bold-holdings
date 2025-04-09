@@ -1,6 +1,7 @@
 import { ArrowLeft, ArrowRight, ArrowUp, ArrowDown } from "lucide-react";
 import { motion } from "framer-motion";
 import Image from "next/image";
+import Link from "next/link";
 
 const companies = [
   {
@@ -8,24 +9,28 @@ const companies = [
     logo: "/tess.png",
     description:
       "Our tech division, specializing in web/app development, AI, and ML, delivering cutting-edge solutions for modern businesses",
+    url: "https://tess.gg/",
   },
   {
     name: "Sion Labs",
     logo: "/sion.png",
     description:
       "A Web3 marketing pioneer, connecting businesses with Asia's top Web3 leaders through strategic collaborations",
+    url: "https://sion.gg/",
   },
   {
     name: "HURUF",
     logo: "/huruf.png",
     description:
       "A creative powerhouse in marketing, branding, and event management, driving high-impact campaigns and brand activations",
+    url: "https://huruf.gg/",
   },
   {
     name: "ESPACO",
     logo: "/espaco.png",
     description:
       "Experts in interior design and space planning, crafting personalized environments that blend style, comfort, and functionality",
+    url: "https://espaco.gg/",
   },
 ];
 
@@ -86,18 +91,17 @@ export default function HowItems() {
             className="flex flex-col items-center text-center p-6 bg-[#8B9596] rounded-3xl"
             variants={item}
           >
-            <Image
-              src={company.logo}
-              alt={company.name}
-              width={100}
-              height={100}
-              className="h-12 sm:h-16 object-contain"
-            />
+            <Link href={company.url} target="_blank" rel="noopener noreferrer">
+              <Image
+                src={company.logo}
+                alt={company.name}
+                width={100}
+                height={100}
+                className="h-12 sm:h-16 object-contain transition-transform duration-300 ease-in-out hover:scale-110 hover:rotate-1 cursor-pointer"
+              />
+            </Link>
 
-            {/* <div className="font-bold text-2xl mb-4 text-white">
-              {company.name}
-            </div> */}
-            <p className="text-sm md:text-xl text-white max-w-md">
+            <p className="text-sm md:text-xl text-[#f7f9eb] max-w-md">
               {company.description}
             </p>
           </motion.div>
