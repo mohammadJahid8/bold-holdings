@@ -12,20 +12,11 @@ const dmSans = DM_Sans({
 export default function Banner() {
   return (
     <FadeInWhenVisible>
-      <section className="relative flex flex-col-reverse md:flex-row items-start justify-between text-white gap-8 md:gap-0">
+      <section className="relative flex flex-col md:flex-row items-start justify-between text-white gap-8 md:gap-0">
         {/* Left Side - Description */}
-        <div className="w-full md:max-w-[30%]">
-          <p className="text-base text-secondary-foreground font-light">
-            We take pride in our expertise and our ability to adapt across
-            industries. We don’t just solve problems—we create tailored,
-            forward-thinking solutions that empower businesses to thrive.
-          </p>
-        </div>
-
-        {/* Right Side - Hero Text */}
         <h1
           className={cn(
-            "text-[32px] sm:text-[48px] md:text-[72px] lg:text-[100px] xl:text-[120px] 2xl:text-[140px] leading-tight sm:leading-[60px] md:leading-[90px] lg:leading-[120px] xl:leading-[135px] font-light text-left md:text-right text-[#6e797a] w-full tracking-[-.02em] md:tracking-[-.04em]",
+            "text-[32px] sm:text-[48px] md:text-[72px] lg:text-[100px] xl:text-[120px] 2xl:text-[140px] leading-tight sm:leading-[60px] md:leading-[90px] lg:leading-[120px] xl:leading-[135px] font-light text-left text-[#6e797a] w-full tracking-[-.02em] md:tracking-[-.04em]",
             dmSans.className
           )}
         >
@@ -42,6 +33,16 @@ export default function Banner() {
             <TypingText text="Results-Driven" delay={1.5} />
           </span>
         </h1>
+
+        <div className="w-full md:max-w-[30%]">
+          <p className="text-base text-secondary-foreground font-light text-left md:text-right md:pt-3">
+            We take pride in our expertise and our ability to adapt across
+            industries. We don’t just solve problems—we create tailored,
+            forward-thinking solutions that empower businesses to thrive.
+          </p>
+        </div>
+
+        {/* Right Side - Hero Text */}
       </section>
     </FadeInWhenVisible>
   );

@@ -61,11 +61,11 @@ export default function Footer() {
       </div>
 
       {/* Torn paper bg */}
-      <img
+      {/* <img
         src="https://www.blackfountaincapital.com/wp-content/themes/bf/images/footer-bg.png"
         alt=""
         className="absolute bottom-0 left-0 w-full pointer-events-none select-none"
-      />
+      /> */}
     </footer>
   );
 }

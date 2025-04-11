@@ -7,11 +7,10 @@ import { useMediaQuery } from "@/hooks/use-media-query";
 const DottedWave = () => {
   const isMobile = useMediaQuery("(max-width: 768px)");
   const [hoverIndex, setHoverIndex] = useState<number | null>(null);
-
   const heights = [
-    170, 176, 176, 184, 182, 190, 194, 190, 200, 196, 200, 215, 213, 227, 240,
-    240, 257, 240, 260, 258, 260, 258, 256, 256, 253, 247, 243, 227, 222, 222,
-    170, 160, 146, 131, 116, 103, 93, 77, 68, 55, 47,
+    47, 55, 68, 77, 93, 103, 116, 131, 146, 160, 170, 222, 222, 227, 243, 247,
+    253, 256, 256, 258, 260, 258, 260, 240, 257, 240, 240, 227, 213, 215, 200,
+    196, 200, 190, 194, 190, 182, 184, 176, 176, 170,
   ];
 
   const handleMouseMove = (e: React.MouseEvent<SVGSVGElement, MouseEvent>) => {

@@ -44,6 +44,14 @@ export default function ChallengesChart() {
             data={chartData}
             margin={{ top: 20, right: 20, left: 0, bottom: 40 }}
           >
+            {/* Define gradient */}
+            <defs>
+              <linearGradient id="barGradient" x1="0" y1="0" x2="1" y2="0">
+                <stop offset="0%" stopColor="#CFCBEE" />
+                <stop offset="100%" stopColor="#F4C2C1" />
+              </linearGradient>
+            </defs>
+
             <CartesianGrid
               vertical={false}
               strokeDasharray="3 3"
@@ -55,7 +63,7 @@ export default function ChallengesChart() {
               tickLine={false}
               tick={<CustomTick x={0} y={0} payload={{ value: "" }} />}
               tickMargin={12}
-              interval={0} // This forces all labels to show
+              interval={0}
             />
             <YAxis
               axisLine={false}
@@ -67,7 +75,7 @@ export default function ChallengesChart() {
             />
             <Bar
               dataKey="percentage"
-              fill="var(--color-percentage)"
+              fill="url(#barGradient)"
               barSize={40}
               radius={[4, 4, 0, 0]}
             />
@@ -77,6 +85,7 @@ export default function ChallengesChart() {
     </div>
   );
 }
+
 const CustomTick = (props: {
   x: number;
   y: number;

@@ -18,11 +18,11 @@ export default function Home() {
     <Lenis>
       <Header />
 
-      <div className="bg-primary text-secondary-foreground pt-20 md:pt-52 px-4 md:px-12 relative overflow-hidden">
+      <div className="bg-[#252525] text-secondary-foreground pt-20 md:pt-52 px-4 md:px-12 relative overflow-hidden">
         <div className="border-t border-[rgba(254,_249,_239,_.3)] pt-6 md:pb-32">
           <Banner />
         </div>
-        <div className="w-full md:absolute bottom-0">
+        <div className="md:absolute bottom-0 right-0">
           <DottedWave />
         </div>
       </div>

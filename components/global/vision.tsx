@@ -1,12 +1,5 @@
 "use client";
-import { cn } from "@/lib/utils";
-import { DM_Sans } from "next/font/google";
 import { motion } from "framer-motion";
-
-const dmSans = DM_Sans({
-  subsets: ["latin"],
-  weight: ["400", "500", "700"],
-});
 
 const container = {
   hidden: {},
@@ -42,90 +35,33 @@ export function VisionSection() {
   ];
   return (
     <div className="text-center">
-      <h3
-        className={cn(
-          "text-sm sm:text-base font-semibold text-muted",
-          dmSans.className
-        )}
-      >
-        The Bold Holdings’ Vision
-      </h3>
-      <h1
-        className={cn(
-          "text-3xl sm:text-4xl md:text-5xl font-bold mt-2",
-          dmSans.className
-        )}
-      >
-        At your side
-      </h1>
-      <h2
-        className={cn(
-          "text-5xl sm:text-6xl md:text-7xl font-bold mt-2",
-          dmSans.className
-        )}
-      >
-        2030
-      </h2>
-
       <motion.div
-        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 sm:mt-12 md:hidden"
+        className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-8 mt-8 sm:mt-20"
         variants={container}
         initial="hidden"
         whileInView="visible"
         viewport={{ once: true, amount: 0.3 }}
       >
         {projects.map((project, index) => (
-          <motion.div key={index} variants={item} className="px-4 sm:px-2">
-            <h4
-              className={cn(
-                "text-lg sm:text-xl text-muted font-bold tracking-wide mt-4 arrow-cell mb-2"
-              )}
+          <motion.div
+            key={index}
+            variants={item}
+            className="md:px-20 text-center"
+          >
+            <div
+              className="inline-block px-8 py-2 mb-4 rounded-full text-lg font-bold text-black capitalize"
+              style={{
+                background: "linear-gradient(to right, #CFCBEE, #F4C2C1)",
+              }}
             >
               {project.title}
-            </h4>
-            <p
-              className={cn(
-                "mt-6 sm:mt-8 text-muted tracking-wide leading-relaxed text-sm sm:text-base"
-              )}
-            >
+            </div>
+            <p className="text-gray-600 text-base leading-relaxed">
               {project.description}
             </p>
           </motion.div>
         ))}
       </motion.div>
-
-      {/* Wrapper for responsive switch */}
-      <div className="hidden sm:table w-full mt-8 sm:mt-12">
-        {/* HEAD section as stacked items on mobile */}
-        <div className="flex flex-col sm:table-header-group">
-          <div className="flex  sm:table-row">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className={`relative bg-accent text-center px-4 py-2 text-xs sm:text-base font-bold text-gray-800 arrow-cell sm:table-cell `}
-              >
-                <div className="flex items-center justify-center gap-2">
-                  {project.title}
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
-
-        {/* BODY section as stacked items on mobile */}
-        <div className="flex flex-col sm:table-row-group">
-          <div className="flex sm:table-row">
-            {projects.map((project, index) => (
-              <div
-                key={index}
-                className="px-4 py-4 text-xs sm:text-base text-muted leading-relaxed sm:table-cell"
-              >
-                {project.description}
-              </div>
-            ))}
-          </div>
-        </div>
-      </div>
     </div>
   );
 }

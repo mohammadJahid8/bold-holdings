@@ -26,7 +26,7 @@ export default function Header() {
 
   return (
     <motion.header
-      className="fixed top-0 left-0 right-0 w-full bg-primary px-4 md:px-12 transition-all duration-600 py-4 md:py-[60px] z-[100]"
+      className="fixed top-0 left-0 right-0 w-full bg-[#252525] px-4 md:px-12 transition-all duration-600 py-4 md:py-[60px] z-[100]"
       animate={{ y: visible ? 0 : -152 }}
       transition={{ duration: visible ? 0.1 : 0.1, ease: "easeInOut" }}
     >

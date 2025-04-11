@@ -30,27 +30,27 @@ export default function Helped() {
       title: "Project #1",
       description:
         "Assisted a Thailand-based client with technology solutions and land commercialization.",
-      images: ["/tess.png", "/sion.png", "/huruf.png"],
+      images: ["/tess.svg", "/sion.svg", "/huruf.svg"],
     },
     {
       id: 2,
       title: "Project #2",
       description:
         "Successfully reduced a local florist CPA while increasing ROAS.",
-      images: ["/tess.png", "/huruf.png"],
+      images: ["/tess.svg", "/huruf.svg"],
     },
     {
       id: 3,
       title: "Project #3",
       description: "Local Venture Space Commercialization.",
-      images: ["/tess.png", "/huruf.png", "/espaco.png"],
+      images: ["/tess.svg", "/huruf.svg", "/espaco.svg"],
     },
     {
       id: 4,
       title: "Project #4",
       description:
         "Developed an Order Flow Management system for a US client to support liquidity provision.",
-      images: ["/tess.png", "/sion.png"],
+      images: ["/tess.svg", "/sion.svg"],
     },
   ];
 
@@ -95,16 +95,16 @@ export default function Helped() {
                 </h3>
                 <p className="text-white">{project.description}</p>
               </div>
-              <div className="flex items-center justify-center gap-2">
+              <div className="flex items-start justify-center gap-x-2">
                 {project.images.map((image) => (
                   <div
                     key={image}
-                    className="max-w-20 w-full sm:max-w-24 aspect-square flex justify-center items-center"
+                    className="w-[80px] h-[50px] sm:w-[96px] sm:h-[60px] flex justify-center items-center"
                   >
                     <img
                       src={image}
                       alt=""
-                      className="h-12 sm:h-14 object-contain"
+                      className="w-full h-full object-cover"
                     />
                   </div>
                 ))}
