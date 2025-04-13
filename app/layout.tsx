@@ -8,11 +8,8 @@ const plusJakartaSans = Plus_Jakarta_Sans({
 });
 
 export const metadata: Metadata = {
-  title: "The Bold Holdings",
-  description: "The Bold Holdings",
-  icons: {
-    icon: "/TBH_Logo.png",
-  },
+  title: "The Bold Holdings | Home to the Bold and Visionary",
+  description: "Home to the Bold and Visionary",
 };
 
 export default function RootLayout({

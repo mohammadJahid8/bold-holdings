@@ -40,6 +40,9 @@ export default function Header() {
               <a
                 href="#mission"
                 className="hover:underline uppercase text-base font-thin tracking-[-.04em] text-secondary-foreground"
+                style={{
+                  wordSpacing: "0.4em",
+                }}
               >
                 About Us
               </a>
