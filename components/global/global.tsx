@@ -41,7 +41,7 @@ const Global = () => {
           <div className="mt-12">
             <Image
               unoptimized
-              src="/map.png"
+              src="/map.svg"
               alt="Global Map"
               width={1000}
               height={1000}
