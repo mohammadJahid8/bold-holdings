@@ -13,7 +13,7 @@ export function TeamCard() {
     {
       quote:
         "A specialist in mini-acquisitions, Nicholas built and bootstrapped a thriving conglomerate in his early 30s. With a track record of managing 20+ active startups, he continuously drives business success through strategic innovation and growth-focused execution.",
-      name: "Nicholas T",
+      name: "Nicholas T.",
       designation: "Barrister-at-Law cum Serial Entrepreneur, SION LABS",
       email: "nicholas@sion.gg",
       src: "/nicholas.jpg",

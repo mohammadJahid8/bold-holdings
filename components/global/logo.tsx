@@ -5,6 +5,7 @@ const Logo = ({ className }: { className?: string }) => {
   return (
     <Link href="/">
       <Image
+        unoptimized
         src="/TBH_Logo.jpg"
         alt="Logo"
         width={50}

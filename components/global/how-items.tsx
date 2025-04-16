@@ -34,7 +34,6 @@ const companies = [
   },
 ];
 
-// Parent stagger variant
 const container = {
   hidden: {},
   visible: {
