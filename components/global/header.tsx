@@ -85,26 +85,29 @@ export default function Header() {
           <ul className="flex flex-col gap-y-4 text-white">
             <li>
               <a
-                href="#"
+                href="#mission"
                 className="hover:underline uppercase text-base font-thin tracking-[-.04em] text-secondary-foreground"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
-                About
+                About Us
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#portfolio"
                 className="hover:underline uppercase text-base font-thin tracking-[-.04em] text-secondary-foreground"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
                 Portfolio
               </a>
             </li>
             <li>
               <a
-                href="#"
+                href="#team"
                 className="hover:underline uppercase text-base font-thin tracking-[-.04em] text-secondary-foreground"
+                onClick={() => setIsMobileMenuOpen(false)}
               >
-                About us
+                Team
               </a>
             </li>
           </ul>
